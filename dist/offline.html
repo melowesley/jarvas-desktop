@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jarvas — sem conexão</title>
+    <style>
+      :root {
+        --lime: #8dc741;
+        --teal: #6aaabf;
+      }
+      html, body {
+        margin: 0;
+        height: 100%;
+        background: #0b0b0d;
+        color: #e6e6e6;
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+      .wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.25rem;
+        padding: 2rem;
+        text-align: center;
+      }
+      .logo {
+        width: 72px;
+        height: 72px;
+        opacity: 0.95;
+      }
+      h1 {
+        font-size: 1.4rem;
+        margin: 0;
+        font-weight: 600;
+      }
+      p {
+        margin: 0;
+        max-width: 32rem;
+        line-height: 1.5;
+        color: #a9a9ad;
+      }
+      .btn {
+        margin-top: 0.5rem;
+        display: inline-block;
+        padding: 0.7rem 1.6rem;
+        border-radius: 0.6rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: #0b0b0d;
+        background: linear-gradient(95deg, var(--lime), var(--teal));
+        cursor: pointer;
+        border: none;
+      }
+      .btn:hover { filter: brightness(1.07); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none" role="img" aria-label="Jarvas">
+        <rect x="415" y="282" width="162" height="132" rx="24" fill="#E8EFD8" opacity="0.92"/>
+        <rect x="372" y="588" width="142" height="138" rx="24" fill="#EDEDE8" opacity="0.95"/>
+        <rect x="408" y="352" width="96" height="86" rx="18" fill="#A4C95A" opacity="0.55"/>
+        <rect x="424" y="394" width="168" height="152" rx="26" fill="#8DC741"/>
+        <rect x="544" y="528" width="152" height="144" rx="24" fill="#A4C95A"/>
+        <rect x="540" y="494" width="78" height="74" rx="16" fill="#9BC04F" opacity="0.7"/>
+        <rect x="624" y="328" width="152" height="148" rx="24" fill="#3F5C6B"/>
+        <rect x="288" y="304" width="86" height="86" rx="17" fill="#44697A"/>
+        <rect x="468" y="194" width="62" height="62" rx="13" fill="#3F5C6B"/>
+        <rect x="606" y="288" width="82" height="82" rx="15" fill="#A4C95A"/>
+        <rect x="342" y="468" width="38" height="38" rx="9" fill="#9BC04F"/>
+        <rect x="444" y="762" width="46" height="46" rx="11" fill="#3F5C6B"/>
+      </svg>
+      <h1>Sem conexão</h1>
+      <p>
+        Não foi possível alcançar o servidor do Jarvas. Verifique sua internet e
+        tente novamente.
+      </p>
+      <!-- Navegar para a URL remota é tratado como interno pelo on_navigation. -->
+      <a class="btn" href="https://jarvas.agendavet.vet.br">Tentar de novo</a>
+    </div>
+  </body>
+</html>

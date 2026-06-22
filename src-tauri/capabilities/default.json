@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capability mínima. A janela carrega a UI remota; nenhuma permissão de IPC é exposta à página. As tools nativas (opener, updater) são chamadas do lado Rust e não dependem de permissões de IPC.",
+  "windows": ["main"],
+  "permissions": []
+}
